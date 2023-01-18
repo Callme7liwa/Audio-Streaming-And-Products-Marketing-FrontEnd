@@ -1,0 +1,231 @@
+
+body {
+	background-color: rgb(41, 41, 41);;
+    min-height: 100vh;
+}
+.container-public-products{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height:100vh ;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 41, 41);;
+
+}
+
+.container-content-products
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 3px;
+    column-gap: 3px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(41, 41, 41);
+    /* top: 9vh; */
+    padding-bottom: 100px;
+}
+
+.container-heider-products{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    top: 10vh;
+}
+
+.heider-left{
+    position: relative;
+    width: 20%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heider-left img{
+    position: relative;
+    border-radius: 50%;
+}
+
+.heider-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heider-right span {
+    display: block;
+    width: 100%;
+    font-size: 26px;
+}
+
+.card-acceuil-product{
+    position: relative;
+    width: 20%;
+    height: 300px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 10px;
+    transition: 0.5s;
+    top: 10vh ;
+}
+
+.card-acceuil-box  :hover .card-acceuil-image-box img{
+    transform: rotate(45deg); 
+}
+.card-acceuil-box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    /* background-color: blue; */
+}
+
+.card-acceuil-image-box{
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:  0.5s ;
+
+}
+
+.card-acceuil-image-box img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.ss{
+    position: absolute;
+    background-color: rgb(225, 225, 225);
+    width: 100%;
+    height:40%;
+    /* //z-index: -1; */
+    top: 40%;
+}
+
+.product-acceuil-info{
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-acceuil-info span {
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(44, 134, 134);
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.product-acceuil-info span:hover{
+    color: rgb(44, 134, 134);
+    background-color:white;
+}
+
+.semi-color-product{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* z-index: -1; */
+    background-color: aliceblue;
+    height: 10%;
+}
+.semi-into{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    /* z-index: -1; */
+    background-color: aliceblue;
+    height: 10%;
+}
+
+
+.categories-list{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    column-gap: 10px;
+    padding: 15px 5px;   
+    /* top: 9vh; */
+    background-color: rgb(43, 43, 43);
+}
+.categories-list span {
+    padding:  10px 0px;
+    border: 2px solid brown;
+    border-radius: 5px;
+    transition: all 0.5s ease ;
+    cursor: pointer;
+    color: wheat;
+    width: 80px;
+    text-align: center;
+}
+
+.categories-list span:hover {
+    background-color: brown;
+    color: white;
+}
+
+/*  */
+
+.Categoryactive{
+    background-color: brown;
+}
+
+.go-back-to-dashboard{
+    position: relative;
+    width: 100%;
+    margin-top: 3vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.go-back-content{
+    position: relative;
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(44, 134, 134);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.go-back-content:hover{
+    background-color: white;
+    color: rgb(44, 134, 134);
+}

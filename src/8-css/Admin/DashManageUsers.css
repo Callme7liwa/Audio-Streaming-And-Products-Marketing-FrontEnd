@@ -1,0 +1,133 @@
+.container-manage {
+    position: relative;
+    width: 100%;
+    /* left: 22%; */
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    padding: 0 60px;
+    flex-wrap: wrap;
+    column-gap: 1% ;
+}
+
+
+.card-manage-commune{
+    position: relative;
+    width: 30%;
+    height: 330px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.card-manage-box-commune{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-manage-box-commune:hover {
+    background: rgb(220, 19, 136);
+    transform: translateY(-50px);
+}
+  
+.card-manage-box-commune:before {
+    content-component: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+
+.card-manage-footer span:nth-child(2){
+    transition: all 0.4s ease;
+}
+
+.card-manage-commune:hover  .card-manage-header img , .card-manage-footer span:nth-child(2) {
+    transform: rotate(360deg);
+    
+}
+/* .card-manage:hover  {
+    transform: scale(1.2);
+    z-index: 111;
+} */
+
+.card-manage-header {
+    position: relative;
+    display: flex;
+    padding: 20px 0px;
+    width: 100%;
+    border-bottom: 4px solid rgb(83, 79, 79);
+    justify-content: center;
+}
+
+.card-manage-header img {
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    transition: all .4s ease;
+
+}
+
+ .card-manage-footer span:nth-child(2)
+{
+    font-size: 18px;
+    color: greenyellow;
+    transition: all 0.4s ease;
+    color: rgb(184, 184, 34);
+}
+
+.card-manage-footer {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.InputSearchUser{
+    position :relative;
+    outline: none;
+    padding: 5px 10px;
+    color: white;
+    background-color: #2a2b2f;
+    border-radius:7px;
+    height: 60%;
+    top:15px;
+    width: 25%;
+    border: 1px solid rgb(32, 11, 149);
+    transition: all 0.4s ease;
+}
+
+.InputSearchUser:focus {
+    box-shadow: 1px 1px 1px 1px rgb(32, 11, 149) ;
+};
+
+.user-action
+{
+    display: flex;
+    width: 100%;
+    padding: 10000px;
+    background-color: aquamarine;
+}

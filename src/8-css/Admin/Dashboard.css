@@ -1,0 +1,12 @@
+.dash-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}

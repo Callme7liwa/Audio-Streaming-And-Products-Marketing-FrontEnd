@@ -1,0 +1,39 @@
+.container-empty {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 50px;
+}
+
+.empty-img{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.empty-img img {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+
+}
+
+.empty-text {
+    display: flex;
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-text  h2{
+    position: relative;
+    /* text-align: center; */
+   
+}

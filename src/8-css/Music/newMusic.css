@@ -1,0 +1,22 @@
+.newMusic{
+    width: 40%;
+}
+
+.text-aria{
+    background: black;
+    border: none;
+    color: white;
+}
+
+.text-aria:focus{
+    background: black;
+    color: white;
+    border: 1px solid rgb(60, 60, 195);
+}
+
+.text-input-new-music:focus{
+    background: black;
+    border: 1px solid rgb(60, 60, 195);
+    box-shadow: inset 5em 1em gold;
+
+}

@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@100;400&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@100;400&display=swap');
+*{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.dash-main {
+    position: relative;
+    width: 78%;
+    left: 22%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #232427;
+}
+
+.dash-main-header {
+    position: relative;
+    top: 0;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dash-main-header-left {
+    position: relative;
+    
+   width: 5%;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+}
+
+.dash-main-header-left i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(224, 177, 22);
+    border-radius: 50%;
+}
+.dash-main-header-right-container {
+    position: relative;
+    width: 13%;
+    height: 50px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 10px;
+    transition: 0.5s; 
+}
+
+.dash-main-header-right-box {
+  
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    color: rgb(191, 165, 0);
+}
+
+.dash-main-header-right-box.active{
+    background-color: antiquewhite;
+    color: black;
+}
+
+.dash-main-header-right-image {
+    position: relative;
+    top: 2.5px;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 1px 1px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+  
+}
+.dash-main-header-right-image img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dash-main-header-right-username {
+    display: flex;
+    font-size: 13px;
+    padding-left: 4px;
+    height: 90%;
+    align-items: center;
+}
+
+.dash-main-content {
+    position: relative;
+    min-height: calc(100% - 10vh);
+    width: 100%;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap:0%;
+    text-transform:uppercase;
+}
+
+.dash-main-content-card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 30%;
+    border-radius: 5px;
+    max-height: 15vh;
+    background-color: #2f2f2f;
+    color: #999;
+    text-transform: uppercase;
+}
+.dash-main-content-card-left  {
+    position: relative;
+    width:100px;
+    height:100px;
+    overflow: hidden;
+    padding: 1px 1px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    /* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); */
+}
+.dash-main-content-card-right {
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #999;
+
+}
+.dash-main-content-card-left img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+};
+
+.dash-main-content-card-right span {
+    font-weight: bold;
+    left: 5px;
+}
+
+.dash-main-content-card-right .show {
+    position: relative;
+    padding: 2px 4px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgb(224, 177, 22);
+}
+
+.dash-main-content-card-right .show:hover {
+    color: rgb(206, 202, 8);
+    background-color: black;
+}
+
+/* 
+****************************** */
+
+.card-manage-intial{
+    position: relative;
+    width: 30%;
+    height: 330px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.card-manage-box-initial{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    /* background-color: blue; */
+}
+
+.card-manage-box-initial:hover {
+    background: rgb(220, 19, 136);
+    transform: translateY(-50px);
+}
+  
+.card-manage-box-initial:before {
+    content-component: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/*  */
+
+.link-search{
+    text-decoration: none;
+    color: white;
+    float: left;
+}
+
+.drop-down{
+    position: absolute;
+    padding: 10px;
+    width: 160px;
+    background-color: #2a2b2f;
+    top: 8vh;
+    right: 1%;
+    border-radius: 5px;
+    color: white;
+    z-index: 1999;
+    transition: all 0.5s ease;
+}
+
+.drop-down.active{
+   right: -30%;
+}
+
+.drop-down ul {
+    list-style: none;
+}
+.drop-down ul li {
+    position: relative;
+    width: 80%;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #999;
+    border-bottom: 1px solid rgb(57, 56, 56); 
+    cursor: pointer; 
+}
+.drop-down ul li:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.no-deco{
+    text-decoration: none;
+}
+
+.no-deco:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,108 @@
+
+
+body {
+    color: aliceblue;
+}
+.public-music-card {
+    cursor: pointer;
+}
+.public-music-card .card-public-music-box .badge-info{
+    opacity: 0;
+    transition: all 0.5s ease ;
+}
+.public-music-card:hover .card-public-music-box .badge-info {
+    opacity: 1;
+}
+
+
+.card-current-music-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 10px 0px;
+    min-height: 30vh;
+}
+
+.card-current-music-box{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);     
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.section-current-music-main{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    align-items: center;
+}
+
+.section-current-music-main span{
+    opacity: 0;
+    background-color: #999;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+
+.card-current-music-box:hover  .section-current-music-main span {
+    opacity: 1;
+}
+
+.section-current-music-main span:hover{
+    background-color: aqua;
+}
+
+.card-current-music-box .section-current-music-left{
+    position:relative;
+    width: 30%;
+    margin-top: 0px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.section-current-music-left img {
+    position: relative;
+    width: 80px ;
+    height: 80px;
+}
+
+.section-current-music-left-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.section-current-music-left-info span:first-child{
+    text-transform: uppercase;
+}
+.section-current-music-left-info span:last-child{
+    color: #999;
+}
+
+.section-current-music-right{
+    display: flex;
+    width: 20%;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+}
+.fa-heart:hover{
+    color: none;
+}

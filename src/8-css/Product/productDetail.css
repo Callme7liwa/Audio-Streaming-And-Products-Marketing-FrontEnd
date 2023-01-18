@@ -1,0 +1,528 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@100;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@100;400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+  
+}
+
+
+
+
+.card-item {
+    position: absolute;
+    left: 0;
+    top: 10vh ; 
+    min-height: 80vh;
+    min-width: 80%;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1px;
+    border-radius: 25px;
+}
+
+.card-left {
+    position: relative;
+    min-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #aab4bd ;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+}
+
+.card-left img {
+    position: absolute;
+    height: 40%;
+}
+
+.text {
+    position: relative;
+    display: flex;
+    font-size: 80px;
+    color: white;
+    font-weight: 500;
+    width: 60%;
+}
+
+.card-right {
+    position: relative;
+    width: 60%;
+    background-color: #aab4bd;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.card-price{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.dollar {
+    font-size: 35px;
+    color: #999;
+}
+
+.chiffre {
+    font-size: 65px;
+    color: crimson;   
+}
+.card-main{
+    font-family: 'Bebas Neue', cursive;
+}
+.main-product-title {
+    font-size: 35px;
+    font-weight: 900;
+    color: crimson;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: unset;
+}
+
+.main-product-type{
+    font-size: 25px;
+    color: black;
+    font-weight: 500;
+    font-family: unset;
+}
+
+.main-product-description {
+    font-size: 15px;
+    color: rgb(63, 63, 63);
+    text-align: justify;
+}
+
+.card-product-footer{
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+}
+
+.product-size,.product-colors{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.product-size-title,.product-color-title{
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.product-size-numbers,.product-color{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 5px;
+}
+
+.size-number{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 50%;
+    font-weight: 300;
+    color: crimson;
+    cursor: pointer;
+}
+
+
+.product-color-title{
+    letter-spacing: 0;
+}
+
+.product-color span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+}
+
+.color:nth-child(1)
+{
+    background-color: chartreuse;
+
+}
+.color:nth-child(2)
+{
+    background-color:crimson;
+
+}
+.color:nth-child(3)
+{
+    background-color: aquamarine;
+
+}
+.color:nth-child(4)
+{
+    background-color: indianred;
+
+}
+.card-button-submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.card-button {
+    width: 30%;
+    left: calc(100% - 15%);
+    padding: 10px 0px;
+    text-align: center;
+    background-color: crimson;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    box-shadow: crimson 0px 1px 2px 0px, crimson 0px 2px 6px 2px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.card-button i {
+    position: relative;
+    left: 15px;
+    font-size: 16px;
+}
+
+.card-button:hover{
+    background-color: rgb(34, 42, 159);
+
+    box-shadow: rgb(34, 42, 159) 0px 1px 2px 0px, rgb(34, 42, 159) 0px 2px 6px 2px;
+} */
+
+/* ----- Variables ----- */
+/* $color-primary: #4c4c4c;
+$color-secondary: #a6a6a6;
+$color-highlight: #ff3f40; */
+
+/* ----- Global ----- */
+
+body {
+	background-color: rgb(228, 227, 227);
+    min-height: 100vh;
+}
+.container-item-product{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	background-color: rgb(228, 227, 227);
+	display: flex;
+	flex-direction: column;
+    row-gap: 9vh;
+}
+
+.content-item-product {
+	position: relative;
+	top: 9vh;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	padding: 20px 0px;
+}
+
+.content-item-product-left{
+	position: relative;
+	width: 20%;
+	left: 10%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	justify-items: center;
+    align-items: center;
+}
+
+.content-item-product-left img{
+    position: relative;
+	display: block;
+	width: 250px;
+	height: 250px;
+	border-radius: 1px solid #999;
+}
+
+.content-item-product-left .products-img-list{
+	position: relative;
+	width: 100%;
+	min-height: 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 10px;
+    justify-content: center;
+}
+
+.content-item-product-left .products-img-list img {
+    position: relative;
+	width: 50px;
+	height: 50px;
+	padding: 2px;
+	border: 2px solid #999;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.products-img-list img.active {
+    border: 2px solid rgb(208, 81, 81);
+}
+
+.content-item-product-main {
+	position: relative;
+	width: 35%;
+	height: 100%;
+	display: flex;
+	flex-direction:column;
+	row-gap: 10px;
+    left: 10%;
+    
+}
+
+.content-item-product-main h5{
+	color: black;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.content-item-product-main  .item-reaction {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	column-gap: 10px;
+}
+
+.content-item-product-main  .item-reaction  span {
+	font-size: 15px;
+	color: black ; 
+	cursor: pointer;
+}
+
+.item-bar{
+	height: 2px;
+	background-color: rgb(234, 233, 233);
+}
+
+.item-price{
+    font-size: 28px;
+    font-weight: 700;    
+    font-family: 'Bebas Neue', cursive;
+	color: rgb(217, 38, 97);
+}
+
+.catgories{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+.catgories h3 ,.quantity h3{
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+.catgories span {
+    padding: 3px 10px;
+    font-size: 14px;
+    color: rgb(217, 38, 97);
+    border: 1px solid #999;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.catgories span:hover {
+    background-color:rgb(217, 38, 97) ;
+    border: 1px solid rgb(217, 38, 97);
+    color: white;
+}
+
+.catgories span.active{
+    background-color:rgb(217, 38, 97) ;
+    border: 1px solid rgb(217, 38, 97);
+    color: white;
+}
+.quantity{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.quantity span {
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-weight: 600;
+}
+.quantity i  {
+    display: block;
+    font-size: 9px;
+    color: rgb(101, 101, 101);
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(219, 212, 212);
+    border-radius: 50%;
+}
+
+.quantity h3{
+    width: 100%;
+    color: black;
+    font-size: 15px;
+
+}
+
+.destination {
+    width: 100%;
+    display: flex;
+    color: black;
+}
+
+.destination h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.destination span {
+    color:rgb(217, 38, 97) ;
+}
+
+
+
+.content-item-product-right{
+   position: relative;
+   width: 10%;
+   left: 10%;
+   min-height: 80%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.content-item-product-right .recommandation-title{
+    position: relative;
+    display: flex;
+    text-align: center;
+    color: #999;
+    font-weight: 700;
+}
+
+.recommendation-product{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+    /* border-bottom: 2px solid 	rgb(234, 233, 233); */
+}
+
+.recommendation-product img {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.recommendation-product h1 {
+    font-family: 'Bebas Neue', cursive;
+	color: rgb(217, 38, 97);
+    font-size: 15px;
+}
+
+.container-item-relatioship{
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 30vh;
+    
+    padding-bottom: 50px;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.container-item-relatioship h1 {
+    padding: 10px;
+}
+
+.content-item-relationship {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 70px;
+}
+
+.card-item-product-relationship{
+   position: relative;
+   width: 30%;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-weight: 700;    
+   font-family: 'Bebas Neue', cursive;
+   padding: 10px 0;
+   min-height: 250px;
+   border-radius: 5px;
+}
+
+.card-item-product-relationship img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.card-item-product-relationship h3 {
+    position: absolute;
+    bottom: -50px;
+    font-size: 17px;
+    /* color: black; */
+}

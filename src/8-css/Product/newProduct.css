@@ -1,0 +1,73 @@
+.container-new-product {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    background: #232427;    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.new-product-card {
+    position: relative;
+    width: 50%;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    
+    transition: 0.5s;
+    padding: 30px;
+}
+
+.form-label {
+    color: white;
+    font-size: 16px;
+}
+
+Select{
+    background-color: aliceblue;
+}
+
+.result {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    column-gap: 3px;
+    cursor: pointer;
+}
+
+.result img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+#upload-pic-product{
+    display: none;
+}
+
+.label-for-uploading{
+    display: block;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc107;
+    color: black;
+}
+
+
+
+.input-new-product{
+    background-color: #232427;
+    background-color: #232427;
+    color: white;
+    border: 1px solid black;
+}

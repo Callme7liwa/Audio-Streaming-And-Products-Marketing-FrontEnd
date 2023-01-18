@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Nunito:wght@200&display=swap');
+
+.dash-main-update-info{
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+}
+
+
+.form-update-profile{
+    display: block;
+    margin-top:0vh;
+}
+
+.form-update-profile .form-label {
+    color: rgb(195, 194, 194);
+}
+
+
+
+.form-update-profile .form-control {
+    background-color: rgb(51, 51, 51);
+    outline: none;
+    border: none;
+    color:white;
+}
+
+.form-group .update-pic{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+

@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Nunito:wght@200&display=swap');
+
+.dash-main-acceuil-artist-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.dash-main-acceuil-artist-content-left {
+    position: relative;
+    width: 60%;
+    min-height: 50vh;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    /* justify-content: center; */
+    align-items: center;
+    border-right: 3px solid rgb(77, 76, 76);
+
+}
+
+.dash-main-acceuil-artist-content-card.active{
+    
+}
+.dash-main-acceuil-artist-content-card {
+    position: relative;
+    width: 65%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 3px solid rgb(50, 50, 50);
+    transition: all 5s ease;
+
+
+}
+
+.dash-main-acceuil-artist-content-card-header {
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    overflow: hidden;
+    align-items: center;
+    border-bottom: 2px solid rgb(45, 44, 44);
+}
+
+.dash-main-acceuil-artist-content-card-header .card-header-left {
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.dash-main-acceuil-artist-content-card-header .card-header-left  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dash-main-acceuil-artist-content-card-header .card-header-right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dash-main-acceuil-artist-content-card-header .card-header-right span {
+    width: 100%;
+    font-size: 11px;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+}
+
+.dash-main-acceuil-artist-content-card-header .card-header-right-bottom{
+    color: #999;
+}
+
+.dash-main-acceuil-artist-content-right {
+    margin-right: 0%;
+    float: right;
+    right: 0%;
+    width: 30%;
+    min-height: 30vh;
+    /* background-color: brown; */
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 20px;
+    position: fixed;
+}
+
+.dash-main-acceuil-artist-content-card-main {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid rgb(45, 44, 44);
+
+}
+
+.dash-main-acceuil-artist-content-card-main img {
+    width: 100%;
+    height: 100%;
+}
+
+.dash-main-acceuil-artist-content-card-footer {
+    position: relative;
+    padding: 10px;
+}
+
+.dash-main-acceuil-artist-content-card-footer .fa-heart{
+   color: #999;
+   font-size: 23px;
+   cursor: pointer;
+   float: right;
+   display: block;
+}
+
+.dash-main-acceuil-artist-content-card-footer-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.dash-main-acceuil-artist-content-card-footer-box .footer-box-username{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dash-main-acceuil-artist-content-card-footer-box .footer-box-description {
+    font-size: 14px;
+    color: #999;
+}
+
+.dash-main-acceuil-artist-content-right-card{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    column-gap: 10px;
+}
+
+.dash-main-acceuil-artist-content-right-card-left{
+    position: relative;
+    width: 7vh;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    
+}
+
+.dash-main-acceuil-artist-content-right-card-left img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dash-main-acceuil-artist-content-right-card-right span {
+    font-family: 'Nunito', sans-serif;
+    display: block;
+}
+
+.dash-main-acceuil-artist-content-right-card-right span:first-child{
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link{
+    text-decoration: none;
+
+}
+
+.dash-main-acceuil-artist-content-right-card-right span:first-child:hover{
+    text-decoration: underline;
+}
+
+.dash-main-acceuil-artist-content-right-card-right span:last-child{
+    font-size: 13px;
+    color: #999;
+}
+
+.badge-abonner{
+    position: absolute;
+    right: 0;
+    top: 25%;
+    cursor: pointer;
+}
+
+.dash-main-acceuil-artist-content-right-title {
+    position: relative;
+    color: #999;
+    text-transform: uppercase;
+    left: 35%;
+    font-size: 14px;
+}
+
+.dash-main-acceuil-artist-content-left-nav-navigate {
+    position: relative;
+    width: 100%;
+}
+
+.dash-main-acceuil-artist-content-left-nav-navigate  ul {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.dash-main-acceuil-artist-content-left-nav-navigate  ul li {
+    width: 15%;
+    padding: 5px 00px;
+    text-align: center;
+    align-items: center;
+    color :#999;
+    text-transform: uppercase;
+    background-color: brown;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.dash-main-acceuil-artist-content-left-nav-navigate  ul li.active{
+    background-color: antiquewhite;
+    color: black;
+}
+.dash-main-acceuil-artist-content-left-nav-navigate  ul li:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+

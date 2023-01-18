@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Nunito:wght@200&display=swap');
+@import 'font-awesome';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.register-container {
+    position: absolute;
+    overflow: hidden;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c0c;
+}
+
+.register-card{
+    position: relative;
+    width: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 60vh;
+    background-color: rgba(255,255,255,0.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    backdrop-filter: blur(15px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.register-card-header{
+    position: relative;
+    width: 100%;
+    padding:10px 0 ;
+    min-height: 15vh;
+    border-bottom:  2px solid rgba(160, 110, 110, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.register-card-header h5 {
+    position: relative;
+    text-align: center;
+}
+
+.register-step {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.register-card-body input {
+    background-color: black;
+    border: 1px solid black ;
+    color: white;
+ }
+ .register-card-body input:focus{
+    background-color: black;
+    color: white;
+    box-shadow: 0 2pc 2px 4px black;
+}
+.register-link {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+input {
+    background-color: #0c0c0c;
+}
+
+.form-group-buttons {
+    position: relative;
+    justify-content: space-around;
+    display: flex;
+}
